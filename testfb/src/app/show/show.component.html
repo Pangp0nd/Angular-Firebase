@@ -1,0 +1,20 @@
+
+<table class='table'>
+<thead>
+<tr>
+
+  <td>Name</td>
+  <td>Age</td>
+  <td>Action</td>
+</tr>
+</thead>
+<tbody>
+  <tr *ngFor="let data of emps">
+  <td>{{data.value.inputName}}</td>
+  <td>{{data.value.inputAge}}</td>
+  <td><button type="button" (click)="editPeople(data)" >Edit</button>
+  <button type="button" (click)="delPeople(data)" >Delete</button></td>
+  </tr>
+</tbody>
+</table>
+<a routerLink="/addPeople">Add</a>

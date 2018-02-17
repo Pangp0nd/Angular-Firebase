@@ -1,0 +1,19 @@
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Practice Angular + Firebase</title>
+
+  </head>
+  <body>
+    <h1>{{title}}</h1>
+    <form (ngSubmit)="addPeople(Form)" #Form="ngForm">
+    <label for="name"> Name</label>
+    <input type="text" name="inputName" ngModel  [(ngModel)]="emp.inputName">
+    <label for="description"> Age</label>
+    <textarea name="inputAge" ngModel [(ngModel)]="emp.inputAge"></textarea><br>
+    <button type="submit">Submit</button>
+    </form>
+    <a routerLink="/">Back</a>
+  </body>
+</html>
